@@ -1,0 +1,17 @@
+1. Search: "firmware" at Google
+https://www.google.com/search?sourceid=chrome-psyapi2&ion=1&espv=2&ie=UTF-8&q=firmware
+. . .
+. . .
+. . .
+. . .
+. . .
+. . .
+. . .
+. . .
+. . .
+2. Search results are returned within 0.36 seconds.
+What is happening in the background?
+
+
+
+Search engines extract data from the web with a crawler module.  The data is placed in a page repository to temporarily store the web pages brought back by the crawler.  This data is then sent to the indexing module, which strips the key content from the web pages, providing a dense summary of each web page.  Next, the indexing module outputs data into indexes of different types, such as content index, video index, and image index.  When the user types in a query in the search, the query gets sent to a query module, which breaks down the query to a language that the search engine can understand.  The query module extracts results back from the different indexes based on relevance and passes these results to the ranking module, which has the job of filtering and putting in rank the results sent back to the user.  The ranking module looks at two different algorithms: the content score that it takes from the index and the popularity score.  The popularity score uses a method called PageRank, which ranks pages based on how many other pages link to them and how popular these other pages are also.  The content score and the popularity score are combined together to determine the content seen on the search engine results page.
