@@ -33,6 +33,9 @@ It worked exactly as expected.
 I also tried using the debug feature in uvision to understand the disassembled program.
 What is the address of ledArr[0]? It is the adress of LED1 (Port 1 pin 18 of LPC1768), *LED1
 What is the address of ch? *ch
+Address of ledArr[0] should be at the bottom of the heap, right after the read-write and zero-initialize blocks
+(somewhere around 0x1000 0198)
+Address of ch should be at the top of the stack (somewhere around 0x1000 7FF0)
 * Enter a hex number [0-9a-fA-F]; Decode it in 4-bit binary format and display them on 4 on board leds.
 #include "mbed.h"
 Serial pc(USBTX, USBRX); // tx, rx
